@@ -1,0 +1,3 @@
+.comp U1 MCU A:in B:out
+.net N1 signal
+.join MISSING U1.A

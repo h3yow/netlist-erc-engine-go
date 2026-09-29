@@ -1,0 +1,11 @@
+# simple demo netlist
+.comp U1 MCU  VCC:pwr/vcc GND:pwr/gnd A:in B:out Y:out
+.comp U2 BUF  A:in Y:out
+.comp R1 R    1:pas 2:pas
+.net VCC power
+.net GND ground
+.net N1 signal
+.join VCC U1.VCC
+.join GND U1.GND
+.join N1 U1.Y U2.A
+.nc U1.A
